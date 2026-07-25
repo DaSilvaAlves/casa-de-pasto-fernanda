@@ -1,0 +1,29 @@
+from_agent: "{agente que cria — ex: dev, qa, aiox-master}"
+to_agent: "{agente destinatário — ou 'any' se qualquer pode consumir}"
+created: "{YYYY-MM-DDTHH:MM:SSZ}"
+status: pending
+consumed: false
+consumed_at: null
+consumed_by: null
+
+project: "{nome do projecto}"
+summary: "{1 parágrafo — aparece no INDEX, deve dar contexto sem abrir o YAML}"
+
+context:
+  story_id: "{se aplicável}"
+  story_path: "{path para a story em docs/stories/}"
+  branch: "{branch git activa}"
+  current_task: "{o que estava a ser feito}"
+  decisions_made:
+    - "{decisão 1}"
+  files_modified:
+    - "{path 1}"
+  blockers:
+    - "{blocker 1 e porquê}"
+  hypotheses_tested:
+    - "{hipótese + resultado}"
+
+next_action: "{acção concreta para o próximo — 1 frase imperativa}"
+
+notes: |
+  {contexto adicional livre — tom, urgência, avisos}

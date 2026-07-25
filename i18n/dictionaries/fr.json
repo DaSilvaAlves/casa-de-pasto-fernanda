@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Casa de Pasto Fernanda e Campinas — Restaurant portugais traditionnel à Vila Nova de Cacela",
+    "description": "Auberge familiale à Vila Nova de Cacela, Algarve. Cuisine portugaise traditionnelle : petiscos, poisson frais, grillades au charbon, porc ibérique et les spécialités de Mãe Fernanda."
+  },
+  "nav": {
+    "specialties": "Spécialités",
+    "menu": "Carte",
+    "gallery": "Galerie",
+    "location": "Nous trouver",
+    "call": "Appeler"
+  },
+  "hero": {
+    "welcome": "Bienvenue à",
+    "tagline": "Cuisine portugaise traditionnelle",
+    "subtitle": "Des saveurs de toujours, au cœur de l'Algarve. Petiscos, grillades au charbon et les spécialités de Mãe Fernanda.",
+    "ctaMenu": "Voir la carte",
+    "ctaDirections": "Itinéraire"
+  },
+  "about": {
+    "title": "Notre maison",
+    "body": "Nous sommes une casa de pasto familiale, où l'on cuisine comme on l'a toujours fait : avec des produits frais, du temps et le goût authentique de la cuisine portugaise. De l'açorda de poule au ragoût de sanglier, chaque plat est fait à la main et servi comme à la maison."
+  },
+  "specialties": {
+    "title": "Spécialités de Mãe Fernanda",
+    "subtitle": "Plats mijotés, faits avec le temps. Réservation à l'avance nécessaire.",
+    "perDose": "prix par portion",
+    "house": "Spécialité de la maison"
+  },
+  "menu": {
+    "title": "Carte",
+    "subtitle": "Cuisine traditionnelle, poisson frais, grillades au charbon et porc ibérique.",
+    "winesTitle": "Carte des vins",
+    "priceNote": "Prix en euros. TVA incluse au taux en vigueur.",
+    "reserveNote": "Réservation à l'avance nécessaire.",
+    "orderIntro": "Touchez les plats pour les ajouter à votre commande et montrez-la au serveur lorsqu'il vient à votre table.",
+    "tapToAdd": "Touchez pour ajouter à la commande",
+    "allTab": "Tout"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Nos plats et notre table."
+  },
+  "location": {
+    "title": "Nous trouver",
+    "addressTitle": "Adresse",
+    "hoursTitle": "Horaires",
+    "contactTitle": "Contact",
+    "servicesTitle": "Services",
+    "directions": "Itinéraire",
+    "call": "Appeler maintenant",
+    "closed": "Fermé",
+    "lunchOnly": "Déjeuner uniquement",
+    "services": {
+      "dineIn": "Sur place",
+      "takeaway": "À emporter"
+    }
+  },
+  "days": {
+    "segunda": "Lundi",
+    "terca": "Mardi",
+    "quarta": "Mercredi",
+    "quinta": "Jeudi",
+    "sexta": "Vendredi",
+    "sabado": "Samedi",
+    "domingo": "Dimanche"
+  },
+  "cart": {
+    "title": "Ma commande",
+    "add": "Ajouter",
+    "viewOrder": "Voir la commande",
+    "empty": "Vous n'avez encore rien choisi.",
+    "emptyHint": "Touchez les plats de la carte pour les ajouter à votre commande.",
+    "total": "Total",
+    "clear": "Vider la commande",
+    "note": "Remarques",
+    "notePlaceholder": "Ex. : sans oignon, bien cuit, sans sel…",
+    "addNote": "Ajouter une remarque",
+    "showStaff": "Montrez cet écran au serveur",
+    "showStaffHint": "Votre commande est prise lorsque le serveur vient à votre table. Elle n'est pas envoyée automatiquement.",
+    "items": "articles",
+    "item": "article",
+    "close": "Fermer",
+    "remove": "Retirer",
+    "extrasTitle": "Suppléments / demandes",
+    "extrasPlaceholder": "Ex. : boisson, salade, riz en plus…",
+    "extrasAdd": "Ajouter"
+  },
+  "footer": {
+    "followUs": "Suivez-nous",
+    "rights": "Tous droits réservés.",
+    "cuisine": "Cuisine portugaise traditionnelle"
+  }
+}

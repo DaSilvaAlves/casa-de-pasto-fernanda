@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Casa de Pasto Fernanda e Campinas — Restaurante tradicional em Vila Nova de Cacela",
+    "description": "Casa de pasto de família em Vila Nova de Cacela, Algarve. Cozinha tradicional portuguesa: petiscos, peixe fresco, grelhados no carvão, carne de porco ibérico e as especialidades da Mãe Fernanda."
+  },
+  "nav": {
+    "specialties": "Especialidades",
+    "menu": "Ementa",
+    "gallery": "Galeria",
+    "location": "Onde estamos",
+    "call": "Ligar"
+  },
+  "hero": {
+    "welcome": "Bem-vindo à",
+    "tagline": "Cozinha tradicional portuguesa",
+    "subtitle": "Sabores de sempre, no coração do Algarve. Petiscos, grelhados no carvão e as especialidades da Mãe Fernanda.",
+    "ctaMenu": "Ver ementa",
+    "ctaDirections": "Como chegar"
+  },
+  "about": {
+    "title": "A nossa casa",
+    "body": "Somos uma casa de pasto de família, onde se cozinha como sempre se cozinhou: com produto fresco, tempo e o sabor genuíno da cozinha portuguesa. Da açorda de galinha ao ensopado de javali, cada prato é feito à mão e servido como em casa."
+  },
+  "specialties": {
+    "title": "Especialidades da Mãe Fernanda",
+    "subtitle": "Pratos de tacho, feitos com tempo. Necessitam de reserva com antecedência.",
+    "perDose": "preço por dose",
+    "house": "Especialidade da casa"
+  },
+  "menu": {
+    "title": "Ementa",
+    "subtitle": "Cozinha tradicional, peixe fresco, grelhados no carvão e carne de porco ibérico.",
+    "winesTitle": "Carta de vinhos",
+    "priceNote": "Preços em euros. IVA incluído à taxa em vigor.",
+    "reserveNote": "Necessita de reserva com antecedência.",
+    "orderIntro": "Toca nos pratos para os juntar ao teu pedido e mostra-o ao empregado quando ele vier à mesa.",
+    "tapToAdd": "Toca para juntar ao pedido",
+    "allTab": "Tudo"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Os nossos pratos e a nossa mesa."
+  },
+  "location": {
+    "title": "Onde estamos",
+    "addressTitle": "Morada",
+    "hoursTitle": "Horário",
+    "contactTitle": "Contactos",
+    "servicesTitle": "Serviços",
+    "directions": "Como chegar",
+    "call": "Ligar agora",
+    "closed": "Encerrado",
+    "lunchOnly": "Só almoço",
+    "services": {
+      "dineIn": "Comer no local",
+      "takeaway": "Take away"
+    }
+  },
+  "days": {
+    "segunda": "Segunda-feira",
+    "terca": "Terça-feira",
+    "quarta": "Quarta-feira",
+    "quinta": "Quinta-feira",
+    "sexta": "Sexta-feira",
+    "sabado": "Sábado",
+    "domingo": "Domingo"
+  },
+  "cart": {
+    "title": "O meu pedido",
+    "add": "Adicionar",
+    "viewOrder": "Ver pedido",
+    "empty": "Ainda não escolheste nada.",
+    "emptyHint": "Toca nos pratos do menu para os juntar ao teu pedido.",
+    "total": "Total",
+    "clear": "Limpar pedido",
+    "note": "Observações",
+    "notePlaceholder": "Ex.: sem cebola, bem passado, sem sal…",
+    "addNote": "Adicionar observação",
+    "showStaff": "Mostre este ecrã ao empregado",
+    "showStaffHint": "O pedido é registado quando o empregado vier à mesa. Não é enviado automaticamente.",
+    "items": "itens",
+    "item": "item",
+    "close": "Fechar",
+    "remove": "Remover",
+    "extrasTitle": "Extras / pedidos adicionais",
+    "extrasPlaceholder": "Ex.: refrigerante, salada, arroz extra…",
+    "extrasAdd": "Adicionar"
+  },
+  "footer": {
+    "followUs": "Siga-nos",
+    "rights": "Todos os direitos reservados.",
+    "cuisine": "Cozinha tradicional portuguesa"
+  }
+}

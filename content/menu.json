@@ -1,0 +1,176 @@
+{
+  "_meta": {
+    "restaurante": "Casa de Pasto Fernanda e Campinas",
+    "moeda": "EUR",
+    "idiomas": ["pt", "en", "es", "fr", "it", "de"],
+    "fonte": "Transcrição das imagens em menu/ (25/07/2026)",
+    "nota": "Nomes de vinhos mantidos na forma original (marcas). Traduções de pratos por abordagem editorial — recomenda-se revisão por falante nativo antes de publicar."
+  },
+  "notaLegal": {
+    "pt": "Nenhum prato, produto alimentar ou bebida, incluindo o couvert, pode ser cobrado se não for solicitado pelo cliente ou por este inutilizado. Neste estabelecimento existe Livro de Reclamações. IVA incluído à taxa em vigor.",
+    "en": "No dish, food item or drink, including the couvert, may be charged unless requested by the customer or used by them. A complaints book is available at this establishment. VAT included at the applicable rate.",
+    "es": "Ningún plato, producto alimenticio o bebida, incluido el couvert, puede cobrarse si no ha sido solicitado por el cliente o utilizado por este. En este establecimiento existe Libro de Reclamaciones. IVA incluido al tipo vigente.",
+    "fr": "Aucun plat, produit alimentaire ou boisson, y compris le couvert, ne peut être facturé s'il n'a pas été demandé par le client ou utilisé par celui-ci. Un livre de réclamations est disponible dans cet établissement. TVA incluse au taux en vigueur.",
+    "it": "Nessun piatto, prodotto alimentare o bevanda, incluso il coperto, può essere addebitato se non richiesto dal cliente o da questi utilizzato. In questo locale è disponibile il registro dei reclami. IVA inclusa all'aliquota vigente.",
+    "de": "Kein Gericht, Lebensmittel oder Getränk, einschließlich des Gedecks, darf berechnet werden, wenn es nicht vom Gast bestellt oder von ihm verbraucht wurde. In diesem Betrieb liegt ein Beschwerdebuch aus. MwSt. zum gültigen Satz inbegriffen."
+  },
+  "categorias": [
+    {
+      "id": "de-inicio",
+      "nome": { "pt": "De início", "en": "To start", "es": "Para empezar", "fr": "Pour commencer", "it": "Per iniziare", "de": "Zum Anfang" },
+      "itens": [
+        { "nome": { "pt": "Pão p/ pessoa", "en": "Bread (per person)", "es": "Pan (por persona)", "fr": "Pain (par personne)", "it": "Pane (a persona)", "de": "Brot (pro Person)" }, "preco": 0.80 },
+        { "nome": { "pt": "Manteiga (unidade)", "en": "Butter (per unit)", "es": "Mantequilla (unidad)", "fr": "Beurre (à l'unité)", "it": "Burro (a porzione)", "de": "Butter (pro Stück)" }, "preco": 0.80 },
+        { "nome": { "pt": "Pasta de sardinha (unidade)", "en": "Sardine pâté (per unit)", "es": "Paté de sardina (unidad)", "fr": "Rillettes de sardine (à l'unité)", "it": "Paté di sardine (a porzione)", "de": "Sardinenpaste (pro Stück)" }, "preco": 1.00 },
+        { "nome": { "pt": "Azeitonas (unidade)", "en": "Olives (per unit)", "es": "Aceitunas (unidad)", "fr": "Olives (à l'unité)", "it": "Olive (a porzione)", "de": "Oliven (pro Portion)" }, "preco": 1.50 },
+        { "nome": { "pt": "Queijo seco", "en": "Cured cheese", "es": "Queso curado", "fr": "Fromage sec", "it": "Formaggio stagionato", "de": "Trockenkäse" }, "preco": 4.50 },
+        { "nome": { "pt": "Queijo fresco", "en": "Fresh cheese", "es": "Queso fresco", "fr": "Fromage frais", "it": "Formaggio fresco", "de": "Frischkäse" }, "preco": 4.50 },
+        { "nome": { "pt": "Presunto", "en": "Cured ham (presunto)", "es": "Jamón curado", "fr": "Jambon cru (presunto)", "it": "Prosciutto crudo (presunto)", "de": "Luftgetrockneter Schinken (Presunto)" }, "preco": 4.50 },
+        { "nome": { "pt": "Paio", "en": "Paio (smoked pork sausage)", "es": "Paio (embutido de cerdo)", "fr": "Paio (saucisse de porc fumée)", "it": "Paio (salume di maiale)", "de": "Paio (geräucherte Schweinswurst)" }, "preco": 4.50 }
+      ]
+    },
+    {
+      "id": "para-petiscar",
+      "nome": { "pt": "Para petiscar", "en": "Small plates", "es": "Para picar", "fr": "À grignoter", "it": "Da stuzzicare", "de": "Zum Knabbern" },
+      "itens": [
+        { "nome": { "pt": "Conquilhas", "en": "Wedge clams (conquilhas)", "es": "Coquinas", "fr": "Tellines (conquilhas)", "it": "Telline (conquilhas)", "de": "Dreiecksmuscheln (Conquilhas)" }, "preco": 17.00 },
+        { "nome": { "pt": "Ameijoas", "en": "Clams", "es": "Almejas", "fr": "Palourdes", "it": "Vongole", "de": "Venusmuscheln" }, "preco": 21.00 },
+        { "nome": { "pt": "Camarão frito", "en": "Fried prawns", "es": "Gambas fritas", "fr": "Crevettes frites", "it": "Gamberi fritti", "de": "Gebratene Garnelen" }, "preco": 16.00 }
+      ]
+    },
+    {
+      "id": "especialidades-mae-fernanda",
+      "nome": { "pt": "Especialidades da Mãe Fernanda", "en": "Mãe Fernanda's specialities", "es": "Especialidades de Mãe Fernanda", "fr": "Spécialités de Mãe Fernanda", "it": "Specialità di Mãe Fernanda", "de": "Spezialitäten von Mãe Fernanda" },
+      "nota": {
+        "pt": "Necessita de ser reservado com antecedência. Preço por dose.",
+        "en": "Must be reserved in advance. Price per portion.",
+        "es": "Debe reservarse con antelación. Precio por ración.",
+        "fr": "Réservation à l'avance nécessaire. Prix par portion.",
+        "it": "È necessaria la prenotazione anticipata. Prezzo a porzione.",
+        "de": "Vorbestellung erforderlich. Preis pro Portion."
+      },
+      "itens": [
+        { "nome": { "pt": "Açorda de galinha", "en": "Chicken açorda (bread stew)", "es": "Açorda de gallina (sopa seca de pan)", "fr": "Açorda de poule (soupe de pain)", "it": "Açorda di gallina (zuppa di pane)", "de": "Hühner-Açorda (Broteintopf)" }, "preco": 20.00 },
+        { "nome": { "pt": "Arroz de cabidela", "en": "Cabidela rice (chicken in blood rice)", "es": "Arroz de cabidela (arroz de gallina en su sangre)", "fr": "Riz de cabidela (poule au sang)", "it": "Riso alla cabidela (gallina nel suo sangue)", "de": "Cabidela-Reis (Huhn im eigenen Blut)" }, "preco": 20.00 },
+        { "nome": { "pt": "Ensopado de javali", "en": "Wild boar stew", "es": "Estofado de jabalí", "fr": "Ragoût de sanglier", "it": "Spezzatino di cinghiale", "de": "Wildschweineintopf" }, "preco": 16.00 },
+        { "nome": { "pt": "Cabrito assado no forno", "en": "Oven-roasted kid goat", "es": "Cabrito asado al horno", "fr": "Chevreau rôti au four", "it": "Capretto arrosto al forno", "de": "Ofengebratenes Zicklein" }, "preco": 23.00 }
+      ]
+    },
+    {
+      "id": "peixe",
+      "nome": { "pt": "Peixe", "en": "Fish", "es": "Pescado", "fr": "Poisson", "it": "Pesce", "de": "Fisch" },
+      "itens": [
+        { "nome": { "pt": "Carapau frito", "en": "Fried horse mackerel", "es": "Jurel frito", "fr": "Chinchard frit", "it": "Sugarello fritto", "de": "Gebratene Bastardmakrele" }, "preco": 13.00 },
+        { "nome": { "pt": "Espadarte grelhado", "en": "Grilled swordfish", "es": "Pez espada a la plancha", "fr": "Espadon grillé", "it": "Pesce spada alla griglia", "de": "Gegrillter Schwertfisch" }, "preco": 16.00 },
+        { "nome": { "pt": "Bife de atum grelhado", "en": "Grilled tuna steak", "es": "Filete de atún a la plancha", "fr": "Steak de thon grillé", "it": "Trancio di tonno alla griglia", "de": "Gegrilltes Thunfischsteak" }, "preco": 15.00 },
+        { "nome": { "pt": "Bife de atum à algarvia", "en": "Algarve-style tuna steak", "es": "Filete de atún a la algarvia", "fr": "Steak de thon à l'algarvienne", "it": "Trancio di tonno all'algarvia", "de": "Thunfischsteak nach Algarve-Art" }, "preco": 17.00 },
+        { "nome": { "pt": "Dourada grelhada", "en": "Grilled sea bream", "es": "Dorada a la plancha", "fr": "Dorade grillée", "it": "Orata alla griglia", "de": "Gegrillte Goldbrasse" }, "preco": 16.00 },
+        { "nome": { "pt": "Salmão grelhado", "en": "Grilled salmon", "es": "Salmón a la plancha", "fr": "Saumon grillé", "it": "Salmone alla griglia", "de": "Gegrillter Lachs" }, "preco": 16.00 }
+      ]
+    },
+    {
+      "id": "grelhados-carvao",
+      "nome": { "pt": "Grelhados no carvão", "en": "Charcoal-grilled", "es": "A la brasa (carbón)", "fr": "Grillades au charbon", "it": "Grigliate alla brace", "de": "Vom Holzkohlegrill" },
+      "itens": [
+        { "nome": { "pt": "Frango", "en": "Chicken", "es": "Pollo", "fr": "Poulet", "it": "Pollo", "de": "Hähnchen" }, "preco": 8.50 },
+        { "nome": { "pt": "Entrecosto", "en": "Pork ribs", "es": "Costillar de cerdo", "fr": "Travers de porc", "it": "Costine di maiale", "de": "Schweinerippchen" }, "preco": 14.00 },
+        { "nome": { "pt": "Febras", "en": "Pork loin steaks (febras)", "es": "Filetes de cerdo (febras)", "fr": "Escalopes de porc (febras)", "it": "Fettine di maiale (febras)", "de": "Schweineschnitzel (Febras)" }, "preco": 10.00 },
+        { "nome": { "pt": "Costeletas de borrego", "en": "Lamb chops", "es": "Chuletas de cordero", "fr": "Côtelettes d'agneau", "it": "Costolette d'agnello", "de": "Lammkoteletts" }, "preco": 20.00 },
+        { "nome": { "pt": "Bife de vitela", "en": "Veal steak", "es": "Filete de ternera", "fr": "Steak de veau", "it": "Bistecca di vitello", "de": "Kalbssteak" }, "preco": 17.00 },
+        { "nome": { "pt": "Bife de perú grelhado", "en": "Grilled turkey steak", "es": "Filete de pavo a la brasa", "fr": "Escalope de dinde grillée", "it": "Fettina di tacchino alla griglia", "de": "Gegrilltes Putensteak" }, "preco": 10.00 },
+        { "nome": { "pt": "Entremeada", "en": "Grilled pork belly (entremeada)", "es": "Panceta de cerdo a la brasa", "fr": "Poitrine de porc grillée (entremeada)", "it": "Pancetta di maiale alla griglia (entremeada)", "de": "Gegrillter Schweinebauch (Entremeada)" }, "preco": 10.00 },
+        { "nome": { "pt": "Mista de porco", "en": "Mixed grilled pork", "es": "Parrillada mixta de cerdo", "fr": "Assortiment de porc grillé", "it": "Grigliata mista di maiale", "de": "Gemischtes Schweinefleisch vom Grill" }, "preco": 13.00 }
+      ]
+    },
+    {
+      "id": "porco-iberico",
+      "nome": { "pt": "Carne de porco ibérico", "en": "Iberian pork", "es": "Cerdo ibérico", "fr": "Porc ibérique", "it": "Maiale iberico", "de": "Iberisches Schwein" },
+      "itens": [
+        { "nome": { "pt": "Presa paleta", "en": "Presa (shoulder cut)", "es": "Presa de paleta", "fr": "Presa (épaule)", "it": "Presa (spalla)", "de": "Presa (Schulterstück)" }, "preco": 20.00 },
+        { "nome": { "pt": "Plumas", "en": "Pluma", "es": "Pluma", "fr": "Pluma", "it": "Pluma", "de": "Pluma" }, "preco": 20.00 },
+        { "nome": { "pt": "Secretos", "en": "Secreto", "es": "Secreto", "fr": "Secreto", "it": "Secreto", "de": "Secreto" }, "preco": 20.00 },
+        { "nome": { "pt": "Lombinhos", "en": "Pork tenderloin (lombinhos)", "es": "Solomillos", "fr": "Filet mignon (lombinhos)", "it": "Filetto (lombinhos)", "de": "Schweinefilet (Lombinhos)" }, "preco": 20.00 }
+      ]
+    },
+    {
+      "id": "para-alem-dos-grelhados",
+      "nome": { "pt": "Para além dos grelhados", "en": "Beyond the grill", "es": "Más allá de la brasa", "fr": "Au-delà des grillades", "it": "Oltre le grigliate", "de": "Mehr als Gegrilltes" },
+      "itens": [
+        { "nome": { "pt": "Perú com cogumelos/natas", "en": "Turkey with mushrooms/cream", "es": "Pavo con setas/nata", "fr": "Dinde aux champignons/crème", "it": "Tacchino con funghi/panna", "de": "Pute mit Pilzen/Sahne" }, "preco": 14.00 },
+        { "nome": { "pt": "Bitoque porco/perú", "en": "Bitoque (pork/turkey steak with fried egg)", "es": "Bitoque de cerdo/pavo (con huevo frito)", "fr": "Bitoque (steak de porc/dinde avec œuf)", "it": "Bitoque (bistecca di maiale/tacchino con uovo)", "de": "Bitoque (Schweine-/Putensteak mit Ei)" }, "preco": 12.00 },
+        { "nome": { "pt": "Bife de pimenta", "en": "Pepper steak", "es": "Filete a la pimienta", "fr": "Steak au poivre", "it": "Bistecca al pepe", "de": "Pfeffersteak" }, "preco": 18.00 }
+      ]
+    }
+  ],
+  "vinhos": [
+    {
+      "id": "vinho-tinto",
+      "nome": { "pt": "Vinho tinto", "en": "Red wine", "es": "Vino tinto", "fr": "Vin rouge", "it": "Vino rosso", "de": "Rotwein" },
+      "itens": [
+        { "nome": "Manoella", "regiao": "Douro", "preco": 27.00 },
+        { "nome": "Arribas Côa", "regiao": "Douro", "preco": 17.00 },
+        { "nome": "Papa Figos", "regiao": "Douro", "preco": 16.00 },
+        { "nome": "Fat Baron", "regiao": "Palmela, Setúbal", "preco": 19.00 },
+        { "nome": "Monte das Servas", "regiao": "Alentejo", "preco": 13.00 },
+        { "nome": "Coelheiros", "regiao": "Alentejo", "preco": 23.00 },
+        { "nome": "Quinta do Paral Reserva", "regiao": "Alentejo", "preco": 35.00 },
+        { "nome": "Senhor Doutor", "regiao": "Alentejo", "preco": 28.00 },
+        { "nome": "Nã Te Rales", "regiao": "Alentejo", "preco": 15.00 },
+        { "nome": "Herdade dos Grous", "regiao": "Alentejo", "preco": 22.00 },
+        { "nome": "Herdade do Gamito", "regiao": "Alentejo", "preco": 27.00 },
+        { "nome": "Balanches", "regiao": "Alentejo", "preco": 18.00 },
+        { "nome": "Herdade da Bombeira", "regiao": "Alentejo", "preco": 17.00 },
+        { "nome": "Herdade da Bombeira Syrah", "regiao": "Alentejo", "preco": 20.00 },
+        { "nome": "Herdade da Bombeira Trincadeira", "regiao": "Alentejo", "preco": 20.00 },
+        { "nome": "10 Tostões", "regiao": "Alentejo", "preco": 25.00 },
+        { "nome": "Monte da Ria", "regiao": "Algarve", "preco": 15.00 },
+        { "nome": "Malaca", "regiao": "Algarve", "preco": 20.00 },
+        { "nome": "Convento da Tomina", "regiao": "Alentejo", "preco": 20.00 },
+        { "nome": "Encantado", "regiao": "Alentejo", "preco": 16.00 },
+        { "nome": "Herdade de São Miguel", "regiao": "Alentejo", "preco": 16.00 },
+        { "nome": "Morgado da Canita", "regiao": "Alentejo", "preco": 14.00 },
+        { "nome": "Mingorra", "regiao": "Alentejo", "preco": 15.00 },
+        { "nome": "Ardila", "regiao": "Alentejo", "preco": 12.00 }
+      ]
+    },
+    {
+      "id": "vinho-branco",
+      "nome": { "pt": "Vinho branco", "en": "White wine", "es": "Vino blanco", "fr": "Vin blanc", "it": "Vino bianco", "de": "Weißwein" },
+      "itens": [
+        { "nome": "Arribas Côa", "regiao": "Douro", "preco": 17.00 },
+        { "nome": "Coelheiros", "regiao": "Alentejo", "preco": 22.00 },
+        { "nome": "Balanches", "regiao": "Alentejo", "preco": 18.00 },
+        { "nome": "Monte das Servas", "regiao": "Alentejo", "preco": 13.00 },
+        { "nome": "Senhor Doutor", "regiao": "Alentejo", "preco": 28.00 },
+        { "nome": "10 Tostões", "regiao": "Alentejo", "preco": 25.00 },
+        { "nome": "Bombeira do Guadiana Chardonnay", "regiao": "Alentejo", "preco": 20.00 },
+        { "nome": "Bombeira do Guadiana Arinto", "regiao": "Alentejo", "preco": 20.00 },
+        { "nome": "Flor do Guadiana", "regiao": "Alentejo", "preco": 16.00 },
+        { "nome": "Vida Nova", "regiao": "Algarve", "preco": 16.00 },
+        { "nome": "Monte da Ria", "regiao": "Algarve", "preco": 15.00 },
+        { "nome": "Malaca", "regiao": "Algarve", "preco": 20.00 },
+        { "nome": "Planalto", "regiao": "Douro", "preco": 14.00 },
+        { "nome": "Ardila", "regiao": "Alentejo", "preco": 12.00 },
+        { "nome": "Mingorra", "regiao": "Alentejo", "preco": 15.00 }
+      ]
+    },
+    {
+      "id": "vinho-verde",
+      "nome": { "pt": "Vinho verde", "en": "Vinho Verde", "es": "Vino verde", "fr": "Vinho Verde", "it": "Vinho Verde", "de": "Vinho Verde" },
+      "itens": [
+        { "nome": "Muralhas", "regiao": "Monção", "preco": 13.00 },
+        { "nome": "Casa da Tapada", "regiao": "Alentejo", "preco": 14.00 },
+        { "nome": "Vinho verde da casa (1 L)", "regiao": null, "preco": 7.00 }
+      ]
+    },
+    {
+      "id": "vinho-rose",
+      "nome": { "pt": "Vinho rosé", "en": "Rosé wine", "es": "Vino rosado", "fr": "Vin rosé", "it": "Vino rosato", "de": "Roséwein" },
+      "itens": [
+        { "nome": "Bombeira do Guadiana Syrah", "regiao": "Alentejo", "preco": 19.00 },
+        { "nome": "Mingorra", "regiao": "Alentejo", "preco": 15.00 },
+        { "nome": "Balanches", "regiao": "Alentejo", "preco": 18.00 }
+      ]
+    }
+  ]
+}

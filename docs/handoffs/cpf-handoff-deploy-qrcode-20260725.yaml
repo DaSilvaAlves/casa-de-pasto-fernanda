@@ -1,0 +1,65 @@
+from_agent: "aiox-master"
+to_agent: "devops"
+created: "2026-07-25T00:00:00Z"
+status: pending
+consumed: false
+consumed_at: null
+consumed_by: null
+
+project: "Casa de Pasto Fernanda e Campinas (site vitrine + pedido self-service)"
+summary: >
+  O site está completo e a compilar (Next.js 15.5 App Router, TypeScript, Tailwind v4, SSG,
+  6 idiomas PT/EN/ES/FR/IT/DE, tema escuro premium, menu interativo com pedido self-service e
+  extras). `npm run build` e `npm start` OK, verificado no browser. Falta PUBLICAR: o projecto
+  ainda NÃO é repositório git e não há domínio configurado. Tarefa do @devops (Gage, único com
+  autoridade git push / deploy): inicializar git, primeiro commit, deploy à Vercel, configurar
+  domínio, actualizar o SITE_URL de placeholder nos 4 ficheiros de SEO, e gerar o QR code para
+  as mesas apontando para o URL publicado.
+
+context:
+  story_id: null
+  story_path: null
+  branch: "sem git ainda — precisa de git init"
+  current_task: "Site pronto para deploy; falta publicar + gerar QR code para as mesas"
+  decisions_made:
+    - "Stack: Next.js 15.5 App Router + TypeScript + Tailwind v4 (4.3.3), SSG, deploy alvo Vercel"
+    - "6 idiomas por prefixo de rota: /pt (default) /en /es /fr /it /de; middleware deteta idioma do browser em /"
+    - "Tema escuro premium (paleta em app/globals.css @theme). Cliente rejeitou versão clara anterior"
+    - "Pedido self-service via QR: cliente toca nos pratos, monta pedido no telemovel (localStorage), mostra ao empregado. NÃO envia (sem WhatsApp/mesa). Tem observações por item e campo de extras livre"
+    - "Açorda de Galinha em destaque (selo Especialidade da casa); imagem de herança da família emoldurada em A nossa casa"
+    - "ESLint desativado no build (next.config.mjs: eslint.ignoreDuringBuilds) — type-check TS continua activo; flat config a adicionar no futuro"
+    - "Next atualizado 15.1.6 -> 15.5.21 por CVE-2025-66478"
+  files_modified:
+    - "Projecto Next.js completo criado nesta sessão (app/, components/, i18n/, lib/, content/, public/, middleware.ts, next.config.mjs, package.json, .gitignore, README.md)"
+    - "Conteúdo editável: content/menu.json, content/info.json, i18n/dictionaries/{pt,en,es,fr,it,de}.json"
+    - "Docs: docs/prd.md, docs/menu-transcricao.md, docs/content/*"
+  blockers:
+    - "NÃO é repositório git — precisa de git init + primeiro commit antes de deploy"
+    - "Domínio não escolhido/confirmado com o cliente. O código assume placeholder 'https://casadepastofernanda.pt' em: app/[locale]/layout.tsx (const SITE_URL), app/sitemap.ts (SITE_URL), app/robots.ts (SITE_URL), components/JsonLd.tsx (URLs hardcoded). Actualizar TODOS para o domínio real após escolha"
+    - "Conteudo pendente do cliente (nao bloqueia deploy, degrada de forma limpa): email oficial, Instagram, validacao de precos (ver fim de docs/menu-transcricao.md), revisao nativa das traducoes EN/ES/FR/IT/DE"
+  hypotheses_tested:
+    - "npm run build -> 6 paginas estaticas (pt/en/es/fr/it/de) + sitemap + robots + middleware: OK"
+    - "npm start + verificacao browser: hero, especialidades, menu interativo, pedido com extras, galeria, mapa, 6 idiomas: OK"
+    - "Endpoint /_next/image otimiza a imagem de heranca (menu-capa.jpeg): 200 OK"
+
+next_action: >
+  @devops: git init + primeiro commit; deploy a Vercel (Next.js nativo); confirmar dominio com o
+  cliente e configura-lo; actualizar SITE_URL nos 4 ficheiros (layout, sitemap, robots, JsonLd)
+  para o dominio real e re-deploy; gerar QR code apontando para o URL raiz publicado (deteta idioma
+  automaticamente) para autocolantes de mesa.
+
+notes: |
+  Contexto de negocio: restaurante tradicional portugues em Vila Nova de Cacela (Algarve).
+  Tel 281 951 770. Facebook ja no info.json; Instagram em falta.
+
+  Deploy recomendado: Vercel (integracao nativa Next.js, edge/CDN, previews por branch, HTTPS).
+  Netlify tambem serve. O build ja usa outputFileTracingRoot para o projecto; nota: existe um
+  package-lock.json do utilizador em C:\Users\XPS — no deploy usar a raiz do projecto.
+
+  QR code: apontar para o URL raiz (ex: https://<dominio>/) e nao para /pt, para que o middleware
+  detete o idioma do turista automaticamente. Se preferir levar direto ao menu/pedido, usar
+  https://<dominio>/#menu (o middleware redireciona / -> /<locale> preservando o comportamento).
+  Sugestao: gerar tambem uma versao com a call-to-action "Ler ementa / Fazer pedido".
+
+  Verificar SEMPRE o estado real antes de agir (git status, ficheiros no disco) — este handoff e
+  uma foto do momento; se algo ja tiver sido feito entretanto, agir sobre o estado real.

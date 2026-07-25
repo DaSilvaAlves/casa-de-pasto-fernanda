@@ -1,0 +1,51 @@
+{
+  "nome": "Casa de Pasto Fernanda e Campinas",
+  "tipo": "Restaurante português — cozinha tradicional portuguesa",
+  "contactos": {
+    "telefone": "+351 281 951 770",
+    "telefoneDisplay": "281 951 770",
+    "email": null,
+    "redesSociais": {
+      "facebook": "https://www.facebook.com/pages/Casa%20De%20Pasto%20D%20Fernanda%20E%20Campinas/346136298792176/",
+      "instagram": null
+    }
+  },
+  "localizacao": {
+    "moradaPostal": {
+      "rua": "Corte António Martins, EM509",
+      "codigoPostal": "8900-038",
+      "localidade": "Vila Nova de Cacela",
+      "regiao": "Algarve",
+      "pais": "Portugal"
+    },
+    "moradaCompleta": "Corte António Martins, EM509, 8900-038 Vila Nova de Cacela",
+    "coordenadas": {
+      "latitude": 37.22381852771721,
+      "longitude": -7.571490276761615
+    },
+    "googleMapsUrl": "https://maps.app.goo.gl/uPn4hc8sv6xKjttB7",
+    "googleMapsEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d327.2357107603747!2d-7.571490276761615!3d37.22381852771721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd101a8053522785%3A0xcd7fcca75fe1af47!2sCasa%20de%20Pasto%20Fernanda%20e%20Campinas!5e1!3m2!1spt-PT!2spt!4v1784938563862!5m2!1spt-PT!2spt"
+  },
+  "servicos": {
+    "comerNoLocal": true,
+    "takeaway": true,
+    "entrega": false
+  },
+  "horario": {
+    "segunda": [{ "abre": "11:30", "fecha": "15:00" }, { "abre": "19:30", "fecha": "23:30" }],
+    "terca": [{ "abre": "11:30", "fecha": "15:00" }],
+    "quarta": [],
+    "quinta": [{ "abre": "11:30", "fecha": "15:00" }, { "abre": "19:30", "fecha": "23:30" }],
+    "sexta": [{ "abre": "11:30", "fecha": "15:00" }, { "abre": "19:30", "fecha": "23:30" }],
+    "sabado": [{ "abre": "11:30", "fecha": "15:00" }, { "abre": "19:30", "fecha": "23:30" }],
+    "domingo": [{ "abre": "11:30", "fecha": "15:00" }, { "abre": "19:30", "fecha": "23:30" }],
+    "_notas": {
+      "terca": "Apenas almoço (sem serviço de jantar)",
+      "quarta": "Encerrado"
+    }
+  },
+  "_pendentes": [
+    "email oficial",
+    "link de Instagram (Facebook já obtido)"
+  ]
+}

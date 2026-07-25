@@ -91,7 +91,7 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
             ))}
           </nav>
           <div className="mt-4 flex items-center justify-between">
-            <LanguageSwitcher current={locale} />
+            <LanguageSwitcher current={locale} dropUp />
             <a
               href={`tel:${info.contactos.telefone}`}
               className="rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-bg"

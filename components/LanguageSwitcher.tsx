@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { locales, localeNames, type Locale } from "@/i18n/config";
 
-export default function LanguageSwitcher({ current }: { current: Locale }) {
+export default function LanguageSwitcher({ current, dropUp = false }: { current: Locale; dropUp?: boolean }) {
   const router = useRouter();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -43,7 +43,9 @@ export default function LanguageSwitcher({ current }: { current: Locale }) {
       {open && (
         <ul
           role="listbox"
-          className="animate-slide-up absolute right-0 top-full z-50 mt-2 min-w-[9rem] overflow-hidden rounded-lg border border-line bg-surface shadow-xl"
+          className={`animate-slide-up absolute right-0 z-50 min-w-[9rem] overflow-hidden rounded-lg border border-line bg-surface shadow-xl ${
+            dropUp ? "bottom-full mb-2" : "top-full mt-2"
+          }`}
         >
           {locales.map((locale) => (
             <li key={locale} role="option" aria-selected={locale === current}>

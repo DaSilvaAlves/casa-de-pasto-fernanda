@@ -19,7 +19,7 @@ export default function Hero({ locale, dict }: { locale: Locale; dict: Dictionar
         </p>
 
         <h1
-          className="animate-slide-up mt-5 font-serif text-[2.75rem] font-extrabold leading-[1.02] text-cream sm:text-7xl"
+          className="animate-slide-up mt-5 font-serif text-[2rem] font-extrabold leading-[1.08] text-cream sm:text-7xl"
           style={{ animationDelay: "0.2s" }}
         >
           Casa de Pasto

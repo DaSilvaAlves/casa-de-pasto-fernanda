@@ -1,9 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 
-const SITE_URL = "https://dasilvaalves.github.io/casa-de-pasto-fernanda";
-
-export const dynamic = "force-static";
+const SITE_URL = "https://casa-de-pasto-fernanda.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return locales.map((locale) => ({

@@ -5,14 +5,14 @@ function getClient() {
   return new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 }
 
-/* Mapeamento de locale para voz OpenAI — "fable" soa mais europeu em PT */
+/* Voz OpenAI — "nova" é a mais fluida e natural */
 const voiceMap: Record<string, "nova" | "alloy" | "echo" | "fable" | "onyx" | "shimmer"> = {
-  pt: "fable",
-  en: "fable",
-  es: "fable",
-  fr: "fable",
-  it: "fable",
-  de: "fable",
+  pt: "nova",
+  en: "nova",
+  es: "nova",
+  fr: "nova",
+  it: "nova",
+  de: "nova",
 };
 
 export async function POST(req: NextRequest) {
@@ -36,10 +36,10 @@ export async function POST(req: NextRequest) {
     const voice = voiceMap[locale] ?? "nova";
 
     const mp3 = await getClient().audio.speech.create({
-      model: "tts-1-hd",
+      model: "tts-1",
       voice,
       input: text,
-      speed: 0.95,
+      speed: 1.0,
     });
 
     const buffer = Buffer.from(await mp3.arrayBuffer());

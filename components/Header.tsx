@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Locale } from "@/i18n/config";
+import { locales, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { info } from "@/lib/content";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -90,11 +90,26 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
               </a>
             ))}
           </nav>
-          <div className="mt-4 flex items-center justify-between">
-            <LanguageSwitcher current={locale} dropUp />
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            {locales.map((l) => (
+              <a
+                key={l}
+                href={`/${l}`}
+                onClick={() => setOpen(false)}
+                className={`rounded-full border px-3 py-1.5 text-xs font-bold uppercase tracking-wide transition-colors ${
+                  l === locale
+                    ? "border-gold bg-gold/10 text-gold"
+                    : "border-line text-cream-dim hover:border-gold/50 hover:text-gold"
+                }`}
+              >
+                {l}
+              </a>
+            ))}
+          </div>
+          <div className="mt-4">
             <a
               href={`tel:${info.contactos.telefone}`}
-              className="rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-bg"
+              className="inline-block rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-bg"
             >
               {dict.nav.call} · {info.contactos.telefoneDisplay}
             </a>

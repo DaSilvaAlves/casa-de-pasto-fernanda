@@ -93,22 +93,37 @@ export default function ChatBot({ locale }: ChatBotProps) {
     if (open) inputRef.current?.focus();
   }, [open]);
 
-  /* ── TTS ────────────────────────────────────────── */
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  /* ── TTS via OpenAI ────────────────────────────── */
   const speak = useCallback(
-    (text: string) => {
-      if (!ttsEnabled || typeof window === "undefined" || !window.speechSynthesis) return;
-      // Cancelar fala anterior
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = speechLocales[locale] ?? "pt-PT";
-      utterance.rate = 1;
-      utterance.pitch = 1;
-      // Tentar encontrar voz adequada
-      const voices = window.speechSynthesis.getVoices();
-      const targetLang = speechLocales[locale] ?? "pt-PT";
-      const voice = voices.find((v) => v.lang.startsWith(targetLang.split("-")[0]));
-      if (voice) utterance.voice = voice;
-      window.speechSynthesis.speak(utterance);
+    async (text: string) => {
+      if (!ttsEnabled) return;
+
+      // Parar audio anterior
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+
+      try {
+        const res = await fetch("/api/tts", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text, locale }),
+        });
+
+        if (!res.ok) return;
+
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+        audioRef.current = audio;
+        audio.onended = () => URL.revokeObjectURL(url);
+        audio.play();
+      } catch {
+        // Fallback silencioso — sem voz, sem erro
+      }
     },
     [locale, ttsEnabled]
   );
@@ -270,7 +285,10 @@ export default function ChatBot({ locale }: ChatBotProps) {
               <button
                 onClick={() => {
                   setTtsEnabled((v) => !v);
-                  if (ttsEnabled) window.speechSynthesis?.cancel();
+                  if (ttsEnabled && audioRef.current) {
+                    audioRef.current.pause();
+                    audioRef.current = null;
+                  }
                 }}
                 aria-label={ttsEnabled ? "Mute" : "Unmute"}
                 className="flex h-8 w-8 items-center justify-center rounded-lg transition-colors"

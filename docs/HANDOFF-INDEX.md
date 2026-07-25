@@ -9,7 +9,7 @@ Prefixo do projecto: `cpf-`. Handoffs pending em `docs/handoffs/*.yaml`; consumi
 
 | Data | Ficheiro | De → Para | Resumo | Ação seguinte |
 |------|----------|-----------|--------|---------------|
-| — | — | — | — | — |
+| 2026-07-25 | [cpf-handoff-dashboard-v2-20260725.yaml](handoffs/cpf-handoff-dashboard-v2-20260725.yaml) | devops → **any** | V1 completa e deployed; iniciar V2 dashboard de gestão do restaurante | Planear auth + BD + scope MVP dashboard |
 
 ## Archived
 

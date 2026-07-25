@@ -1,0 +1,85 @@
+from_agent: "devops"
+to_agent: "any"
+created: "2026-07-25T21:00:00Z"
+status: pending
+consumed: false
+consumed_at: null
+consumed_by: null
+
+project: "Casa de Pasto Fernanda e Campinas — V2 Dashboard"
+summary: >
+  Site vitrine V1 completo e em produção (casa-de-pasto-fernanda.vercel.app). Next.js 15.5,
+  TypeScript, Tailwind v4, 6 idiomas, chatbot com voz (OpenAI gpt-4o-mini + TTS), menu
+  interactivo com pedido self-service, QR codes gerados. V2: desenvolver dashboard de gestão
+  para o restaurante.
+
+context:
+  story_id: null
+  story_path: null
+  branch: "master"
+  current_task: "V1 concluída e deployed. Iniciar V2 — dashboard de gestão."
+  decisions_made:
+    - "Stack: Next.js 15.5 App Router + TypeScript + Tailwind v4 (4.3.3), deploy Vercel"
+    - "6 idiomas por prefixo de rota: /pt /en /es /fr /it /de; middleware detecta idioma do browser"
+    - "Tema escuro premium (paleta em app/globals.css @theme)"
+    - "Pedido self-service via QR: cliente monta pedido no telemóvel (localStorage), mostra ao empregado"
+    - "Chatbot com voz: OpenAI gpt-4o-mini (chat) + tts-1 voz nova (TTS) + Web Speech API (STT)"
+    - "System prompt com 10 regras absolutas: só pratos do menu.json, açorda de galinha como recomendação n.º 1, sem preços salvo pergunta directa, PT-PT obrigatório, 'falar com colaborador' em vez de 'ligar'"
+    - "ESLint desactivado no build (next.config.mjs); typecheck TS activo"
+    - "Repo público (requisito GitHub Pages inicial, mantido após migração para Vercel)"
+    - "Variável de ambiente OPENAI_API_KEY configurada na Vercel (Production + Preview)"
+    - "Imagens em public/fotos/ (tracked no git); fotos/ e menu/ raiz excluídos (.gitignore)"
+    - "QR codes locais (qr-code-home.png, qr-code-ementa.png) — excluídos do repo"
+  files_modified:
+    - "app/[locale]/layout.tsx — layout principal com ChatBot integrado"
+    - "app/[locale]/page.tsx — página principal com todas as secções"
+    - "app/api/chat/route.ts — API do chatbot (OpenAI, streaming, system prompt completo)"
+    - "app/api/tts/route.ts — Text-to-Speech via OpenAI (voz nova, tts-1)"
+    - "components/ChatBot.tsx — componente chatbot com STT + TTS + streaming + localStorage"
+    - "components/Header.tsx — nav com idiomas inline no mobile"
+    - "components/Hero.tsx — hero com font-size responsivo"
+    - "components/LanguageSwitcher.tsx — dropdown desktop, inline mobile (dropUp prop)"
+    - "components/Gallery.tsx, Specialties.tsx, Location.tsx, JsonLd.tsx — secções do site"
+    - "lib/gallery.ts — referências a public/fotos/"
+    - "content/menu.json — ementa completa com 7 categorias + 4 tipos de vinho"
+    - "content/info.json — dados do restaurante (horários, contactos, localização, serviços)"
+    - "i18n/ — config de idiomas + dicionários (pt, en, es, fr, it, de)"
+    - "middleware.ts — detecção de idioma via accept-language header"
+    - ".github/workflows/ — removido (era GitHub Pages, agora Vercel auto-deploy)"
+  blockers:
+    - "Sem sistema de autenticação — necessário para o dashboard"
+    - "Sem base de dados — o conteúdo (menu, info) vive em JSON estáticos; dashboard precisa de persistência"
+    - "Sem painel de administração — tudo é editado no código"
+  hypotheses_tested:
+    - "Build npm run build: OK (11 páginas SSG + 2 rotas dinâmicas /api/chat e /api/tts + middleware)"
+    - "Deploy Vercel auto-deploy via push ao master: OK"
+    - "Chatbot responde correctamente com pratos do menu real, sem inventar: OK (após ajuste de prompt)"
+    - "TTS OpenAI voz nova funciona em 6 idiomas: OK (ligeiramente abrasileirada em PT mas aceitável)"
+    - "STT Web Speech API funciona no Chrome mobile: OK"
+    - "QR code home aponta para raiz (middleware redireciona para idioma do browser): OK"
+
+next_action: >
+  Planear e implementar dashboard V2 para gestão do restaurante. Possíveis funcionalidades:
+  gestão de menu/preços em tempo real, gestão de reservas, visualização de pedidos self-service,
+  analytics (visitas, idiomas mais usados), gestão de horários, painel de conteúdo (fotos, textos).
+  Requer decisões sobre autenticação (NextAuth? Supabase?), base de dados (Supabase? Vercel Postgres?),
+  e scope exacto do MVP do dashboard.
+
+notes: |
+  Contexto de negócio: restaurante tradicional português em Vila Nova de Cacela (Algarve).
+  Tel 281 951 770. Dona: Mãe Fernanda.
+
+  URL produção: https://casa-de-pasto-fernanda.vercel.app
+  Repo: https://github.com/DaSilvaAlves/casa-de-pasto-fernanda (público)
+
+  O site V1 está estável e funcional. O chatbot consome ~0,01€ por conversa (gpt-4o-mini)
+  + custo TTS por resposta falada.
+
+  Para o dashboard, considerar:
+  - Autenticação simples (pode ser apenas password fixa para começar, ou Supabase Auth)
+  - Supabase como backend (gratuito até 500MB, bom para MVP)
+  - Rota /admin protegida por auth
+  - Migrar menu.json e info.json para BD para edição dinâmica
+  - WebSocket ou polling para pedidos em tempo real
+
+  O próximo agente deve verificar o estado actual do repo (git log, ficheiros) antes de agir.

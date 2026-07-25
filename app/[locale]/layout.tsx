@@ -11,6 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import { CartProvider } from "@/components/cart/CartContext";
 import CartBar from "@/components/cart/CartBar";
 import CartDrawer from "@/components/cart/CartDrawer";
+import ChatBot from "@/components/ChatBot";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -93,6 +94,7 @@ export default async function LocaleLayout({
           <Footer locale={typedLocale} dict={dict} />
           <CartBar locale={typedLocale} dict={dict} />
           <CartDrawer locale={typedLocale} dict={dict} />
+          <ChatBot locale={typedLocale} />
         </CartProvider>
       </body>
     </html>

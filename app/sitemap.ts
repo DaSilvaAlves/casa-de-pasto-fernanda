@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 
-const SITE_URL = "https://casadepastofernanda.pt";
+const SITE_URL = "https://casadepastofernanda.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return locales.map((locale) => ({

@@ -26,7 +26,7 @@ const nunito = Nunito_Sans({
   display: "swap",
 });
 
-const SITE_URL = "https://casadepastofernanda.pt";
+const SITE_URL = "https://casadepastofernanda.vercel.app";
 
 export const viewport = {
   themeColor: "#16100d",

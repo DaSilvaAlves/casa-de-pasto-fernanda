@@ -11,3 +11,4 @@ next-env.d.ts
 # Assets locais (fora do repo)
 /fotos
 /menu
+qr-code-*.png

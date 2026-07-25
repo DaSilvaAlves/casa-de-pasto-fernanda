@@ -1,10 +1,10 @@
 from_agent: "aiox-master"
 to_agent: "devops"
 created: "2026-07-25T00:00:00Z"
-status: pending
-consumed: false
-consumed_at: null
-consumed_by: null
+status: consumed
+consumed: true
+consumed_at: "2026-07-25T12:00:00Z"
+consumed_by: "devops (Gage)"
 
 project: "Casa de Pasto Fernanda e Campinas (site vitrine + pedido self-service)"
 summary: >

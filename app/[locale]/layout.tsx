@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Nunito_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
-import "../globals.css";
 import { locales, isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { info } from "@/lib/content";
@@ -12,21 +10,7 @@ import { CartProvider } from "@/components/cart/CartContext";
 import CartBar from "@/components/cart/CartBar";
 import CartDrawer from "@/components/cart/CartDrawer";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
-  variable: "--font-playfair",
-  display: "swap",
-});
-
-const nunito = Nunito_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const SITE_URL = "https://casadepastofernanda.vercel.app";
+const SITE_URL = "https://dasilvaalves.github.io/casa-de-pasto-fernanda";
 
 export const viewport = {
   themeColor: "#16100d",
@@ -84,17 +68,15 @@ export default async function LocaleLayout({
   const dict = getDictionary(typedLocale);
 
   return (
-    <html lang={locale} className={`${playfair.variable} ${nunito.variable}`}>
-      <body>
-        <JsonLd locale={typedLocale} />
-        <CartProvider>
-          <Header locale={typedLocale} dict={dict} />
-          <main>{children}</main>
-          <Footer locale={typedLocale} dict={dict} />
-          <CartBar locale={typedLocale} dict={dict} />
-          <CartDrawer locale={typedLocale} dict={dict} />
-        </CartProvider>
-      </body>
-    </html>
+    <>
+      <JsonLd locale={typedLocale} />
+      <CartProvider>
+        <Header locale={typedLocale} dict={dict} />
+        <main>{children}</main>
+        <Footer locale={typedLocale} dict={dict} />
+        <CartBar locale={typedLocale} dict={dict} />
+        <CartDrawer locale={typedLocale} dict={dict} />
+      </CartProvider>
+    </>
   );
 }

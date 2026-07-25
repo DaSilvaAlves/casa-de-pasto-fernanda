@@ -1,13 +1,9 @@
-import { fileURLToPath } from "node:url";
-import { dirname } from "node:path";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  outputFileTracingRoot: __dirname,
+  output: "export",
+  basePath: "/casa-de-pasto-fernanda",
   images: {
-    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
   },
   eslint: {
     // O type-checking do TypeScript corre na mesma no build.

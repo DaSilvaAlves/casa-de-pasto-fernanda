@@ -31,8 +31,8 @@ export default function JsonLd({ locale }: { locale: Locale }) {
     servesCuisine: "Portuguese",
     priceRange: "€€",
     telephone: contactos.telefone,
-    url: `https://casadepastofernanda.vercel.app/${locale}`,
-    image: "https://casadepastofernanda.vercel.app/fotos/grelhada-mista.jpg",
+    url: `https://dasilvaalves.github.io/casa-de-pasto-fernanda/${locale}`,
+    image: "https://dasilvaalves.github.io/casa-de-pasto-fernanda/fotos/grelhada-mista.jpg",
     address: localizacao.moradaPostal
       ? {
           "@type": "PostalAddress",

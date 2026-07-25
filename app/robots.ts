@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://casadepastofernanda.vercel.app";
+const SITE_URL = "https://dasilvaalves.github.io/casa-de-pasto-fernanda";
+
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
